@@ -39,5 +39,10 @@ public class StringCalculatorTest {
 	 {
 		   	assertEquals(stringCalculator.add("2,5,1"),8);
 	 }
+	 
+	 @Test(expectedExceptions=Exception.class )
+	   public void  negativeInputReturnsException() throws Exception {
+	   	stringCalculator.add("-1");
+	   }
 	
 }

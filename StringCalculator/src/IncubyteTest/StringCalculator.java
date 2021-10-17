@@ -7,7 +7,7 @@ public class StringCalculator
 {
 	private final String delimiter = ",|\n";
 
-	 public int add(String input)
+	 public int add(String input) throws Exception
 	 {
 		 String[] numbers = input.split(",|\n");
 	    	
@@ -30,16 +30,23 @@ public class StringCalculator
 	    	 return Integer.parseInt(input);
 	    }
 	    
-	    private int getSum(String [] numbers)
+	    private int getSum(String [] numbers) throws Exception
 	    {
+	    	invalidInputs(numbers);
 	    	int sum=0;
-	    	for(String num:numbers) {
-	    		if(stringToInt(num)>1000) {
-    			continue;
-    		}
-	    		sum = sum+Integer.parseInt(num);
+	    	for(String num:numbers)
+	    	{
+	    		sum = sum+stringToInt(num);
 	    	}
 	    	return sum;
+	    }
+	    
+	    private void invalidInputs(String numbers[])throws Exception {
+	    	for(String inp:numbers) {
+	    		if(stringToInt(inp)<0) {
+	    			throw new Exception("Invalid input Negative numbers not allowed");
+	    		}
+	    	}
 	    }
 	    
 	    
