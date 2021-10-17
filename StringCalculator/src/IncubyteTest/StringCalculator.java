@@ -7,7 +7,7 @@ public class StringCalculator {
 
 	public Object add(String string) {
 		
-		return -1;
+		return 0;
 	}
 	
 }

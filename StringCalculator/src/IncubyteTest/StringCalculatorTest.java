@@ -15,7 +15,7 @@ public class StringCalculatorTest {
 		stringCalculator = new StringCalculator();
 	}
 	
-	public void empty_string_should_return_0() throws Exception {
+	public void emptystringshouldreturnZero() throws Exception {
         assertEquals(stringCalculator.add(""),0);   
     }
 	
