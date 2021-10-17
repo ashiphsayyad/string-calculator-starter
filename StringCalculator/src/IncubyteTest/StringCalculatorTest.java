@@ -29,5 +29,9 @@ public class StringCalculatorTest {
 	 {
 		   	assertEquals(stringCalculator.add("2,3"),5);
 	 }
+	 
+	 public void twoNumbersNewLineDelimitedReturnSum()throws Exception {
+		   	assertEquals(stringCalculator.add("1\n2"),3);
+		   }
 	
 }
