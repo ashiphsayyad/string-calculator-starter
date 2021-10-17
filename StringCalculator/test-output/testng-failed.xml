@@ -5,8 +5,8 @@
     <classes>
       <class name="IncubyteTest.StringCalculatorTest">
         <methods>
+          <include name="ignoreInputGreaterThanThosand"/>
           <include name="init"/>
-          <include name="DelimitedInTwoNoCommaReturnSum"/>
         </methods>
       </class> <!-- IncubyteTest.StringCalculatorTest -->
     </classes>

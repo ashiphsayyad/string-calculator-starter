@@ -45,4 +45,8 @@ public class StringCalculatorTest {
 	   	stringCalculator.add("-1");
 	   }
 	
+	 public void ignoreInputGreaterThanThosand() throws Exception 
+	 {
+		 assertEquals(stringCalculator.add("30,30,1234"),60);
+	 }
 }

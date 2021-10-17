@@ -36,6 +36,9 @@ public class StringCalculator
 	    	int sum=0;
 	    	for(String num:numbers)
 	    	{
+	    		if(stringToInt(num)>1000) {
+	    			continue;
+	    		}
 	    		sum = sum+stringToInt(num);
 	    	}
 	    	return sum;

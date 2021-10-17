@@ -1,40 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="6" passed="6" failed="0" skipped="0">
+<testng-results ignored="6" total="7" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2021-10-17T16:43:25 IST" name="Default suite" finished-at="2021-10-17T16:43:25 IST" duration-ms="96">
+  <suite started-at="2021-10-17T16:49:01 IST" name="Default suite" finished-at="2021-10-17T16:49:01 IST" duration-ms="70">
     <groups>
     </groups>
-    <test started-at="2021-10-17T16:43:25 IST" name="Default test" finished-at="2021-10-17T16:43:25 IST" duration-ms="96">
+    <test started-at="2021-10-17T16:49:01 IST" name="Default test" finished-at="2021-10-17T16:49:01 IST" duration-ms="70">
       <class name="IncubyteTest.StringCalculatorTest">
-        <test-method is-config="true" signature="init()[pri:0, instance:IncubyteTest.StringCalculatorTest@41e1e210]" started-at="2021-10-17T16:43:25 IST" name="init" finished-at="2021-10-17T16:43:25 IST" duration-ms="10" status="PASS">
+        <test-method is-config="true" signature="init()[pri:0, instance:IncubyteTest.StringCalculatorTest@120f102b]" started-at="2021-10-17T16:49:01 IST" name="init" finished-at="2021-10-17T16:49:01 IST" duration-ms="9" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- init -->
-        <test-method signature="DelimitedInTwoNoCommaReturnSum()[pri:0, instance:IncubyteTest.StringCalculatorTest@41e1e210]" started-at="2021-10-17T16:43:25 IST" name="DelimitedInTwoNoCommaReturnSum" finished-at="2021-10-17T16:43:25 IST" duration-ms="10" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- DelimitedInTwoNoCommaReturnSum -->
-        <test-method signature="DelimitedthreeNumbersBothWayReturnSum()[pri:0, instance:IncubyteTest.StringCalculatorTest@41e1e210]" started-at="2021-10-17T16:43:25 IST" name="DelimitedthreeNumbersBothWayReturnSum" finished-at="2021-10-17T16:43:25 IST" duration-ms="2" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- DelimitedthreeNumbersBothWayReturnSum -->
-        <test-method signature="ReturnSingleValue()[pri:0, instance:IncubyteTest.StringCalculatorTest@41e1e210]" started-at="2021-10-17T16:43:25 IST" name="ReturnSingleValue" finished-at="2021-10-17T16:43:25 IST" duration-ms="3" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- ReturnSingleValue -->
-        <test-method signature="emptystringshouldreturnZero()[pri:0, instance:IncubyteTest.StringCalculatorTest@41e1e210]" started-at="2021-10-17T16:43:25 IST" name="emptystringshouldreturnZero" finished-at="2021-10-17T16:43:25 IST" duration-ms="3" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- emptystringshouldreturnZero -->
-        <test-method signature="negativeInputReturnsException()[pri:0, instance:IncubyteTest.StringCalculatorTest@41e1e210]" started-at="2021-10-17T16:43:25 IST" name="negativeInputReturnsException" finished-at="2021-10-17T16:43:25 IST" duration-ms="2" status="PASS">
+        <test-method signature="negativeInputReturnsException()[pri:0, instance:IncubyteTest.StringCalculatorTest@120f102b]" started-at="2021-10-17T16:49:01 IST" name="negativeInputReturnsException" finished-at="2021-10-17T16:49:01 IST" duration-ms="7" status="PASS">
           <exception class="java.lang.Exception">
             <message>
               <![CDATA[Invalid input Negative numbers not allowed]]>
             </message>
             <full-stacktrace>
               <![CDATA[java.lang.Exception: Invalid input Negative numbers not allowed
-at IncubyteTest.StringCalculator.invalidInputs(StringCalculator.java:47)
+at IncubyteTest.StringCalculator.invalidInputs(StringCalculator.java:50)
 at IncubyteTest.StringCalculator.getSum(StringCalculator.java:35)
 at IncubyteTest.StringCalculator.add(StringCalculator.java:22)
 at IncubyteTest.StringCalculatorTest.negativeInputReturnsException(StringCalculatorTest.java:45)
@@ -72,10 +56,6 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- negativeInputReturnsException -->
-        <test-method signature="twoNumbersNewLineDelimitedReturnSum()[pri:0, instance:IncubyteTest.StringCalculatorTest@41e1e210]" started-at="2021-10-17T16:43:25 IST" name="twoNumbersNewLineDelimitedReturnSum" finished-at="2021-10-17T16:43:25 IST" duration-ms="4" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- twoNumbersNewLineDelimitedReturnSum -->
       </class> <!-- IncubyteTest.StringCalculatorTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
