@@ -3,11 +3,16 @@ package IncubyteTest;
 import org.testng.annotations.Test;
 
 @Test
-public class StringCalculator {
+public class StringCalculator 
+{
 
-	public Object add(String string) {
-		
-		return 0;
-	}
+	 public int add(String input) {
+	    	
+	    	
+	        if(input.isEmpty()) {
+	        	return 0;
+	        }
+	       return Integer.parseInt(input);
+	    }
 	
 }
