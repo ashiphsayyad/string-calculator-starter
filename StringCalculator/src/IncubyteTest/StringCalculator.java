@@ -18,15 +18,22 @@ public class StringCalculator
 	        	return stringToInt(input);
 	        }
 		 else
-	       return Integer.parseInt(numbers[0]) + Integer.parseInt(numbers[1]);
+	       return getSum(numbers[0],numbers[1]);
 	    }
 	
-	 private boolean isEmpty(String input) {
+	 	private boolean isEmpty(String input) {
 	    	return input.isEmpty();
 	    }
 	    
 	    private int stringToInt(String input) {
 	    	 return Integer.parseInt(input);
 	    }
+	    
+	    private int getSum(String no1, String no2)
+	    {
+	    	return Integer.parseInt(no1) + Integer.parseInt(no2);
+	    }
+	    
+	    
 	 
 }
