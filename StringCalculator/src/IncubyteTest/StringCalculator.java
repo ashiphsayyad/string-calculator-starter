@@ -19,7 +19,7 @@ public class StringCalculator
 	        	return stringToInt(input);
 	        }
 		 else
-	       return getSum(numbers[0],numbers[1]);
+	       return getSum(numbers);
 	    }
 	
 	 	private boolean isEmpty(String input) {
@@ -30,9 +30,16 @@ public class StringCalculator
 	    	 return Integer.parseInt(input);
 	    }
 	    
-	    private int getSum(String no1, String no2)
+	    private int getSum(String [] numbers)
 	    {
-	    	return Integer.parseInt(no1) + Integer.parseInt(no2);
+	    	int sum=0;
+	    	for(String num:numbers) {
+	    		if(stringToInt(num)>1000) {
+    			continue;
+    		}
+	    		sum = sum+Integer.parseInt(num);
+	    	}
+	    	return sum;
 	    }
 	    
 	    

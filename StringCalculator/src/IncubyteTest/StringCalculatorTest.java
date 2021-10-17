@@ -30,8 +30,14 @@ public class StringCalculatorTest {
 		   	assertEquals(stringCalculator.add("2,3"),5);
 	 }
 	 
-	 public void twoNumbersNewLineDelimitedReturnSum()throws Exception {
+	 public void twoNumbersNewLineDelimitedReturnSum()throws Exception 
+	 {
 		   	assertEquals(stringCalculator.add("1\n2"),3);
-		   }
+	 }
+	 
+	 public void DelimitedthreeNumbersBothWayReturnSum() throws Exception
+	 {
+		   	assertEquals(stringCalculator.add("2,5,1"),8);
+	 }
 	
 }
