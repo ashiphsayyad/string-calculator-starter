@@ -6,7 +6,7 @@
       <class name="IncubyteTest.StringCalculatorTest">
         <methods>
           <include name="init"/>
-          <include name="empty_string_should_return_0"/>
+          <include name="DelimitedInTwoNoCommaReturnSum"/>
         </methods>
       </class> <!-- IncubyteTest.StringCalculatorTest -->
     </classes>

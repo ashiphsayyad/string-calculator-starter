@@ -24,5 +24,10 @@ public class StringCalculatorTest {
 	 {
 	       assertEquals(stringCalculator.add("1"),1);
 	 }
+	 
+	 public void DelimitedInTwoNoCommaReturnSum()throws Exception
+	 {
+		   	assertEquals(stringCalculator.add("2,3"),5);
+	 }
 	
 }
